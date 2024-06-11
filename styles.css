@@ -4,9 +4,32 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+
+    /* background-color: #f4f4f4;
     color: #333;
+*/
+    background-color: black;
+    color: lime;
 }
+
+/* Mimic the appearance of a terminal */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.prompt {
+    color: #00ff00;
+    /* Green */
+}
+
+/* Style the input/output text */
+.input-output {
+    color: white;
+}
+
 
 .container {
     width: 80%;
@@ -49,8 +72,14 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .section {
-    padding: 40px 0;
+    /* padding: 9px 0; */
+    margin-bottom: 0px;
 }
 
 .section img {
@@ -157,4 +186,20 @@ footer p {
 
 .resume-link:hover {
     color: #0056b3;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+    border-bottom: 1px dashed #00ff00;
+}
+
+a:hover {
+    color: #00ff00;
+    background-color: rgba(255, 255, 255, 0.1);
 }

@@ -7,45 +7,50 @@
     <title>Coming Soon</title>
     <style>
         body {
+            background-color: black;
+            color: lime;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
         }
 
-        .message {
+        .coming-soon {
             text-align: center;
+            font-size: 24px;
         }
 
-        .message h1 {
-            font-size: 3em;
-            margin: 0;
+        .backslash-animation {
+            display: inline-block;
+            animation: backslash 1s infinite alternate;
+        }
+
+        @keyframes backslash {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-10px) rotate(180deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="message">
-        <h1>Coming Soon</h1>
+    <div class="coming-soon">
+        <span>Coming Soon</span>
+        <span class="backslash-animation">/</span>
     </div>
-
-    <footer>
-        <div class="contact">
-            <h2>Contact Me</h2>
-            <ul>
-                <li><a href="mailto:your-email@example.com"><img src="google-gmail.svg" alt="Email"></a></li>
-                <li><a href="https://github.com/yourusername" target="_blank"><img src="github-icon.svg"
-                            alt="GitHub"></a></li>
-                <li><a href="https://www.linkedin.com/in/yourusername" target="_blank"><img src="linkedin-icon.svg"
-                            alt="LinkedIn"></a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
 </body>
 
 </html>
